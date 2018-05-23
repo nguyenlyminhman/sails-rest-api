@@ -33,9 +33,16 @@ module.exports.datastores = {
   ***************************************************************************/
 
   default: {
+    localDiskDb: {
+      adapter: 'sails-disk'
+    },
 
+    mongoDb: {
+      adapter: 'sails-mongo',
+      url: "mongodb://localhost:27017/sails_api"
+    }
     /***************************************************************************
-    *                                                                          *
+    *    127.0.0.1                                                                      *
     * Want to use a different database during development?                     *
     *                                                                          *
     * 1. Choose an adapter:                                                    *
