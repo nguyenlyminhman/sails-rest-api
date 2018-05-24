@@ -8,7 +8,11 @@
 module.exports = {
 
   attributes: {
-    name: { type: 'string' }
+    name: { type: 'string' },
+    posts: {
+      collection: 'post',
+      via: '_category'
+    }
   },
 
 };

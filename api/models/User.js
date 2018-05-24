@@ -11,7 +11,11 @@ module.exports = {
     first_name: { type: 'string' },
     last_name: { type: 'string' },
     email: { type: 'string', unique: true },
-    password: { type: 'string' }
+    password: { type: 'string' },
+    posts:{
+      collection: 'post',
+      via:'_user'
+    }
 
   },
 
